@@ -9,13 +9,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 .app {
-    background-color: #111;
+    background-color: #ffffff11;
     color: #fff;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
