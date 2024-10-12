@@ -32,6 +32,11 @@
 
     <p v-if="extractedMessage" class="extracted-message">Extracted Message: {{ extractedMessage }}</p>
     <p v-if="errorMessage" class="error-message">{{ errorMessage }}</p>
+    <footer class="footer">
+      <a href="https://github.com/FALKERN" target="_blank" class="glowing-text">
+        Made by FALKERN
+      </a>
+    </footer>
   </div>
 </template>
 
@@ -128,4 +133,25 @@ export default {
 </script>
 
 <style>
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.glowing-text {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 4px #ffffff, 0 0 5px #ffffff;
+  }
+  to {
+    text-shadow: 0 0 2px #d2d2d2, 0 0 4px #d2d2d2, 0 0 6px #d2d2d2, 0 0 8px #d2d2d2, 0 0 10px #d2d2d2;
+  }
+}
 </style>
